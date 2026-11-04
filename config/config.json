@@ -7,7 +7,7 @@
     "comparisons": "results/comparisons", "reports": "results/reports", "logs": "logs"
   },
   "hashcat": {
-    "executable": "hashcat", "hash_mode": 100, "attack_mode": 3, "workload_profile": 2,
+    "executable": "D:\\Programs\\hashcat-8.0.0\\hashcat.exe", "hash_mode": 100, "attack_mode": 3, "workload_profile": 2,
     "optimized_kernel": false, "timeout_seconds": 0, "status_interval": 10
   },
   "experiment": {
