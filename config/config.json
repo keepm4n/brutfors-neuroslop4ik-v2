@@ -1,0 +1,25 @@
+{
+  "project": {"name": "Password Brute Force Experiment", "version": "1.0"},
+  "paths": {
+    "source": "data/source", "samples": "data/samples", "individual_hashes": "data/hashes/individual",
+    "merged_hashes": "data/hashes/merged", "cracked_hashes": "data/hashes/cracked", "masks": "data/masks",
+    "raw_results": "results/raw", "processed_results": "results/processed", "statistics": "results/statistics",
+    "comparisons": "results/comparisons", "reports": "results/reports", "logs": "logs"
+  },
+  "hashcat": {
+    "executable": "hashcat", "hash_mode": 100, "attack_mode": 3, "workload_profile": 2,
+    "optimized_kernel": false, "timeout_seconds": 0, "status_interval": 10
+  },
+  "experiment": {
+    "gpu_name": "NVIDIA GeForce GTX 1660 SUPER", "sample_size": 100, "top_passwords": 100,
+    "encoding": "utf-8", "hash_algorithm": "sha1", "continue_after_mask": true,
+    "mask_files": [
+      "data/masks/mask_1.hcmask",
+      "data/masks/mask_2.hcmask",
+      "data/masks/mask_3.hcmask",
+      "data/masks/mask_4.hcmask"
+    ],
+    "mask_file": "data/masks/experiment.hcmask", "experiment_id": "",
+    "increment": {"enabled": true, "min_length": 4, "max_length": 12}
+  }
+}

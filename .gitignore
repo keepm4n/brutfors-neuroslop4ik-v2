@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.vs/
+data/source/*
+data/samples/*
+data/hashes/individual/*
+data/hashes/cracked/*
+results/raw/*
+logs/*
+!data/source/.gitkeep
+!data/samples/.gitkeep
+!data/hashes/individual/.gitkeep
+!data/hashes/cracked/.gitkeep
+!results/raw/.gitkeep
